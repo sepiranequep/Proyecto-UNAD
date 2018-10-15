@@ -1,10 +1,10 @@
 .imagen{
-    margin-top: -41px;
+    margin-top: -75px;
     padding: .0rem !important;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 .card:hover{
-    transform:scale(1.1);
+    transform:scale(1.01);
     transition: .5s;
 }
