@@ -1,0 +1,10 @@
+.imagen{
+    margin-top: -41px;
+    padding: .0rem !important;
+    width: 100px;
+    height: 100px;
+}
+.card:hover{
+    transform:scale(1.1);
+    transition: .5s;
+}
