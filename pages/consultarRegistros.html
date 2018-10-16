@@ -126,21 +126,37 @@
         <!-- AQUI CADA QUIEN PONE EL CONTENIDO DE LA SECCION QUE LE TOCO -->
         <div class="container mt-3">
             <div class="shadow-sm">
-                <h2>Objetivo de la sección</h2>
-                <p>
-                    Ver con un ejemplo los pasos a seguir para realizar una consulta de un registro a una tabla dentro de una base de datos MySQL.
-                </p>
-                <h2 class="text-center">Procedimiento para llevar a cabo una consulta <br/> a una base de datos mysql con php</h2>
-                <br/>
-                <p>
-                    Para poder hacer una consulta a alguna tabla de la base de datos es importante primero haber creado la conexión ya que la
-                    variable que contiene esta la utilizaremos durante el SELECT, además usaremos el método ‘mysqli_query’
-                    el cual requiere dos parámetros, primero la conexión creada anteriormente y luego la sentencia SQL de
-                    selección, si lo hacemos correctamente este método nos retorna un objeto de tipo ‘mysqli_result’ el cual
-                    debemos guardar en una variable y con esta acceder a los resultados devueltos por la petición mediante
-                    otros métodos, es importante liberar el resultado antes de usarlo en otra petición como se muestra en
-                    la imagen, además de igual cerrar la conexión al terminar de usarla para devolverle recursos al servidor.
-                </p>
+                <div class="bg-secondary text-white p-2 rounded">
+                    <h2>Objetivo de la sección</h2>
+                    <p>
+                        Ver con un ejemplo los pasos a seguir para realizar una consulta de un registro a una tabla dentro de una base de datos MySQL.
+                    </p>
+                </div>
+                <div class="p-2 mt-4 text-center">
+                    <h2 class="text-center">Procedimiento para llevar a cabo una consulta
+                        <br/> a una base de datos mysql con php</h2>
+                    <br/>
+                    <p class="text-justify">
+                        Para poder hacer una consulta a alguna tabla de la base de datos es importante primero haber creado la conexión ya que la
+                        variable que contiene esta, la utilizaremos durante el SELECT además usaremos el método ‘mysqli_query’
+                        el cual requiere dos parámetros, primero la conexión creada anteriormente y luego la sentencia SQL
+                        de selección, si lo hacemos correctamente este método nos retorna un objeto de tipo ‘mysqli_result’
+                        el cual debemos guardar en una variable y con esta acceder a los resultados devueltos por la petición
+                        mediante otros métodos, es importante liberar el resultado antes de usarlo en otra petición como
+                        se muestra en la imagen, además igual cerrar la conexión al terminar de usarla para devolverle recursos
+                        al servidor.
+                    </p>
+                    <img class="img-thumbnail" src="../images/consultarRegistros/1.PNG">
+                    <br/>
+                    <cite style="font-size: .8em">Manual de PHP.(2017).Ejemplos básicos de la extención MySQLi.[Figura].Recuperado de:
+                        <br/> http://php.net/manual/es/mysqli.examples-basic.php</cite>
+                    <p class="text-justify mt-4">
+                        Si la conexión con la BBDD esta correctamente creada y seguimos a cabalidad los pasos mencionados en esta sección podremos
+                        acceder a la información de cualquier tabla que tengamos creada en nuestra base de datos MySQL.<br/><br/>
+                        Además, es importante resaltar que debemos usar las extensiones <strong>MySQLi</strong> o <strong>PDO_MySQL</strong> para realizar estos procedimientos, 
+                        ya que la extensión <strong>Mysql</strong> aunque todavía exista fue declarada obsoleta(deprecated) en la versión 5.5.0 de PHP y eliminada en la 7.0.0.
+                    </p>
+                </div>
             </div>
         </div>
         <hr class="bg-dark">
