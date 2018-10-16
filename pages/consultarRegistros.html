@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,  user-scalable=no, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="../images/iconPestañas/index.ico">
-    <title>Inicio</title>
+    <link rel="shortcut icon" href="../images/iconPestañas/lecturas.ico">
+    <title>Consultar Registros</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
@@ -80,16 +80,16 @@
 
             <div class="collapse navbar-collapse" id="barraNavegacion">
                 <ul class="navbar-nav mx-auto text-center">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item active dropdown">
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
                             Lecturas
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Lectura 1</a>
-                            <a class="dropdown-item" href="consultarRegistros.html">Consultar Registros</a>
+                            <a class="dropdown-item active" href="#">Consultar Registros</a>
                             <a class="dropdown-item" href="#">Lectura 3</a>
                             <a class="dropdown-item" href="#">Lectura 4</a>
                             <a class="dropdown-item" href="#">Lectura 5</a>
@@ -126,52 +126,22 @@
         <!-- AQUI CADA QUIEN PONE EL CONTENIDO DE LA SECCION QUE LE TOCO -->
         <div class="container mt-3">
             <div class="shadow-sm">
-                <h1 class="text-center">Objetivos generales del OVI</h1>
-                <br>
-                <h3>Objetivo General</h3>
+                <h2>Objetivo de la sección</h2>
                 <p>
-                    Realizar un objeto virtual de aprendizaje, utilizando tecnologías de maquetado y diseño web como lo son HTML5 y CSS3, esto
-                    con la finalidad de adquirir experiencia con las herramientas antes mencionadas para en un futuro poder
-                    diseñar páginas más complejas.
+                    Ver con un ejemplo los pasos a seguir para realizar una consulta de un registro a una tabla dentro de una base de datos MySQL.
                 </p>
-
-                <h3>Objetivos Especificos</h3>
-                <ul>
-                    <li>
-                        <p>
-                            Dar a conocer los pasos y métodos necesarios para realizar la conexión a una base de datos MySQL desde PHP haciendo un ping
-                            al mismo para comprobar que la conexión fue exitosa.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Mostrar las instrucciones necesarias para la manipulación de la base de datos, ejecutando operaciones de consulta, adición,
-                            modificación y eliminación de registros.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Utilizar medios como videos e imágenes para la ilustración y orientación mas completa de los procedimientos que se deben
-                            realizar para conectar y acceder a datos desde una base de datos con PHP.
-                        </p>
-                    </li>
-                </ul>
+                <h2 class="text-center">Procedimiento para llevar a cabo una consulta <br/> a una base de datos mysql con php</h2>
+                <br/>
                 <p>
-                    Además de todo lo anterior encontraremos actividades que nos ayudaran a afianzar los conocimientos recopilados durante la
-                    lectura del OVI, es muy recomendable que luego de estudiar la teoría se pase directamente a la sección
-                    de actividades.
+                    Para poder hacer una consulta a alguna tabla de la base de datos es importante primero haber creado la conexión ya que la
+                    variable que contiene esta la utilizaremos durante el SELECT, además usaremos el método ‘mysqli_query’
+                    el cual requiere dos parámetros, primero la conexión creada anteriormente y luego la sentencia SQL de
+                    selección, si lo hacemos correctamente este método nos retorna un objeto de tipo ‘mysqli_result’ el cual
+                    debemos guardar en una variable y con esta acceder a los resultados devueltos por la petición mediante
+                    otros métodos, es importante liberar el resultado antes de usarlo en otra petición como se muestra en
+                    la imagen, además de igual cerrar la conexión al terminar de usarla para devolverle recursos al servidor.
                 </p>
-                <p>
-                    Antes de salir del OVI recomendamos pasar por la seccion de
-                    <strong>Autores</strong> donde encontraras la información de contacto de cada colaborador.
-                </p>
-                <h1>Modulo de twitter</h1>
-                <div style="height: 60vh; overflow: auto;">
-                    <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
             </div>
-
         </div>
         <hr class="bg-dark">
         <!-- Fin cuerpo inicio -->
