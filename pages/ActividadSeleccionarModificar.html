@@ -140,6 +140,9 @@
                 <h2 class="text-center">Actividad Selección</h2>
                 <br/>
                 <p>
+                   <strong> Del siguiente texto completar los espacios con las palabras correspondientes: </strong>
+                </p>
+                <p>
                     Para crear una consulta requerimos conocer, la palabra reservada del lenguaje SQL
                     <input type="text" class="comparables"> y un atributo de la tabla de donde queremos sacar la información que sería el
                     <input type="text" class="comparables">, con esta información podemos proceder a crear la consulta, pero no sin antes conocer los dos métodos
@@ -153,27 +156,33 @@
 
 
                 </p>
-                <p class="text-center">
+                <div class="ml-5 pl-5">
+                <p class="text-justify">
                     $ varConexion =
                     <input type="text" class="comparables">(“nombreHost”,”userName”,”password”,”nombreBBDD”);
                     <br> If($resultado =
                     <input type="text" class="comparables">($varConexion, “
                     <input type="text" class="comparables"> * FROM nombreTablaBBDD”)){
-                    <br> // Código que se ejecutara si la selección devuelve algún resultado.
-                    <br> }
+                    <div class="ml-5">// Código que se ejecutara si la selección devuelve algún resultado.</div>
+                    }
                 </p>
+                </div>
                 <p>
                     Por último, pero no menos importante, se debe liberar el espacio de memoria que se utiliza al hacer la consulta, esto se
                     hace con el método de PHP
-                    <input type="text" class="comparables">
+                    <input type="text" class="comparables">.
                     <br>
-                    <input type="text" class="comparables">($resultado);
+                    <div class="text-center">
+                        <input type="text" class="comparables">($resultado);
+                    </div>
+                    
                 </p>
 
                 <div class="text-center">
-                    <button type="button" class="btn btn-success">Revisar</button>
-                    <button type="button" class="btn btn-primary">Mostrar respuestas</button>
+                    <button type="button" class="btn btn-success" onclick="revisarSeleccion()">Revisar</button>
+                    <button type="button" class="btn btn-primary" onclick="mostrarRespuestas()">Mostrar respuestas</button>
                 </div>
+                <h2 id="mensajeSelect" class="text-center mt-4 text-success"></h2>
             </div>
             <hr/>
             <!-- UPDATE -->
