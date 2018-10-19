@@ -8,3 +8,6 @@
     transform:scale(1.01);
     transition: .5s;
 }
+.imgHead{
+    height: 250px;
+}
