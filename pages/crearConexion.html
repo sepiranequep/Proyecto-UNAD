@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html> 
-<head> 
-	<meta charset="UTF-8">
+<html>
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,  user-scalable=no, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0">
-    <title>Pagina-2</title>
+    <link rel="shortcut icon" href="../images/iconPestañas/lecturas.ico">
+    <title>Coneccion PHP a MYSQ</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"> Coneccion PHP a MYSQ
+</head>
 
-</head> 
 <body class="bg-dark">
     <div class="container bg-light">
 
@@ -25,35 +27,32 @@
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <a href="#">
-                        <img class="d-block w-100" src="https://picsum.photos/1200/280?image=12" alt="">
+                    <a href="consultarRegistros.html">
+                        <img class="d-block w-100" src="../images/carrusel/1.jpg" alt="" height="250">
 
                         <!-- Texto dentro de las imagenes-->
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Primera imagen</h1>
-                            <p>Descripcion primera imagen</p>
+                        <div class="carousel-caption d-none d-md-block bg-gradient-dark " style="background-color: rgba(0, 0, 0, .4);">
+                            <h1>Como realizar consultas a una base de datos MySQL con PHP.</h1>
                         </div>
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="#">
-                        <img class="d-block w-100" src="https://picsum.photos/1200/280?random" alt="">
+                    <a href="ActividadSeleccionarModificar.html">
+                        <img class="d-block w-100" src="../images/carrusel/2.jpg" alt="" height="250">
                         <!-- Texto dentro de las imagenes-->
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Segunda imagen</h1>
-                            <p>Descripcion segunda imagen</p>
+                        <div class="carousel-caption d-none d-md-block bg-gradient-dark" style="background-color: rgba(0, 0, 0, .4);">
+                            <h1>Algunos ejercicios para repasar lo aprendido.</h1>
                         </div>
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="#">
-                        <img class="d-block w-100" src="https://picsum.photos/1200/280?imgae=122" alt="">
+                    <a href="autores.html">
+                        <img class="d-block w-100" src="../images/carrusel/3.jpg" alt="" height="250">
                         <!-- Texto dentro de las imagenes-->
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Tercera imagen</h1>
-                            <p>Descripcion tercera imagen</p>
+                        <div class="carousel-caption d-none d-md-block bg-gradient-dark" style="background-color: rgba(0, 0, 0, .4);">
+                            <h1>Conoce a las personas que hicieron posible este OVI.</h1>
                         </div>
                     </a>
                 </div>
@@ -70,7 +69,7 @@
         </div>
         <!-- Fin carrucel -->
 
-       <!-- Barra de navegación -->
+        <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-secondary sticky-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion">
                 <span class="navbar-toggler-icon"></span>
@@ -78,15 +77,15 @@
 
             <div class="collapse navbar-collapse" id="barraNavegacion">
                 <ul class="navbar-nav mx-auto text-center">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-item nav-link">Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item active dropdown">
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
                             Lecturas
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="seccion-2.html">Coneccion PHP a MYSQL</a>
+                            <a class="dropdown-item active" href="crearConexion.html">Coneccion PHP a MYSQL</a>
                             <a class="dropdown-item" href="consultarRegistros.html">Consultar Registros</a>
                             <a class="dropdown-item" href="InsertarRegistros.html">Insertar registros</a>
                             <a class="dropdown-item" href="#">Lectura 4</a>
@@ -127,77 +126,91 @@
                 <div class="bg-secondary text-white p-2 rounded">
                     <h2>Objetivo de la sección</h2>
                     <p>
-                        Mostrar los pasos que se deben seguir y los métodos a utilizar para la correcta conexión de PHP a una base de datos MySQL, al terminar poder realizar un ping para confirmar la correcta creación de la conexión.
+                        Mostrar los pasos que se deben seguir y los métodos a utilizar para la correcta conexión de PHP a una base de datos MySQL,
+                        al terminar poder realizar un ping para confirmar la correcta creación de la conexión.
                     </p>
                 </div>
                 <div class="p-2 mt-4 text-center">
                     <h2 class="text-center">Procedimiento para llevar a cabo una conexion de PHP a una base de datos MySQL.</h2>
-                     <br/>
-                      <p class="text-justify">
-                        El primer paso que necesitamos es tener una base de datos en MySQL, si ya la tienes puedes saltarte est epaso y ir directamente al codigo de coneccion, si no te invito para que veas y siguas el siguiente paso.
-                       </p>
-                     <br/>
-                       <h2 class="text-left">Paso 1 – Crear una base de datos MySQL</h2>
-                    
-                       <p class="text-justify">
-                         Este paso es necesario en caso de que aún no tengas una base de datos MySQL creada. En Hostinger, la base de datos MySQL se puede crear fácilmente en la sección de Bases de Datos MySQL.
-                       </p>
-                    
+                    <br/>
+                    <p class="text-justify">
+                        El primer paso que necesitamos es tener una base de datos en MySQL, si ya la tienes puedes saltarte est epaso y ir directamente
+                        al codigo de coneccion, si no te invito para que veas y siguas el siguiente paso.
+                    </p>
+                    <br/>
+                    <h2 class="text-left">Paso 1 – Crear una base de datos MySQL</h2>
+
+                    <p class="text-justify">
+                        Este paso es necesario en caso de que aún no tengas una base de datos MySQL creada. En Hostinger, la base de datos MySQL
+                        se puede crear fácilmente en la sección de Bases de Datos MySQL.
+                    </p>
+
                     <img class="img-thumbnail" src="../images/Coneccion PHP-MySQL/bases-de-datos-mysql-en-Hostinger-panel.png">
                     <br/>
                     <cite style="font-size: .8em">TUTORIAL H HOSTINGER.(2018).Como conectar PHP con MySQL.[Figura].Recuperado de:
                         <br/>https://www.hostinger.co/tutoriales/conectar-php-mysql/#gref</cite>
-                     <br/>
-                     <br/>
-                     <p class="text-justify">
-                        Cuando estés en la sección de Bases de Datos MySQL, ingresa los datos requeridos y presiona el botón <strong>Crear</strong>.
-                     </p>
-                      <br/>
-                     <img class="img-thumbnail" src="../images/Coneccion PHP-MySQL/crear-base-de-datos-MySQL.png">
+                    <br/>
+                    <br/>
+                    <p class="text-justify">
+                        Cuando estés en la sección de Bases de Datos MySQL, ingresa los datos requeridos y presiona el botón
+                        <strong>Crear</strong>.
+                    </p>
+                    <br/>
+                    <img class="img-thumbnail" src="../images/Coneccion PHP-MySQL/crear-base-de-datos-MySQL.png">
                     <br/>
                     <cite style="font-size: .8em">TUTORIAL H HOSTINGER.(2018).Como conectar PHP con MySQL.[Figura].Recuperado de:
                         <br/>https://www.hostinger.co/tutoriales/conectar-php-mysql/#gref</cite>
-                    
+
                     <!-- Paso 2 – Escribir el código PHP para conectar con la base de datos MySQL -->
-                     <br/>
+                    <br/>
                     <br/>
                     <h2 class="text-left">Paso 2 – Escribir el código PHP para conectar con la base de datos MySQL</h2>
-                    
-                     <p class="text-justify mt-4">
-                        Ahora hay dos métodos para conectarse a una base de datos SQL con PHP: son MySQLi y PDO. Uno de los cambios más importantes es que ambos admiten “declaraciones preparadas”, que eliminan la posibilidad de ataques de inyección SQL al realizar cambios en la base de datos. Las funciones originales ‘mysql_’ están en desuso y no deben utilizarse ya que no son seguras y ya no se mantienen o desarrollan.
-                     <br/> 
-                     <br/>
-                         
-                        MySQLi significa MySQL Improved (mejorado) y agrega nuevas características específicamente a la interfaz de MySQL. PDO significa PHP Data Object (Objeto de datos PHP). La diferencia principal entre PDO y MySQLi es que PDO es compatible con varios tipos de bases de datos diferentes (MySQL, MS SQL, Postgre DB) en el mismo script, sin embargo, solo tienes que escribir funciones relacionadas con los datos una vez. PDO está ‘orientado a objetos’, la conexión a la base de datos se crea al crear un objeto variable. Ejemplo de creación de un nuevo objeto:
-                      </p>
-                    
+
+                    <p class="text-justify mt-4">
+                        Ahora hay dos métodos para conectarse a una base de datos SQL con PHP: son MySQLi y PDO. Uno de los cambios más importantes
+                        es que ambos admiten “declaraciones preparadas”, que eliminan la posibilidad de ataques de inyección
+                        SQL al realizar cambios en la base de datos. Las funciones originales ‘mysql_’ están en desuso y
+                        no deben utilizarse ya que no son seguras y ya no se mantienen o desarrollan.
+                        <br/>
+                        <br/> MySQLi significa MySQL Improved (mejorado) y agrega nuevas características específicamente a la
+                        interfaz de MySQL. PDO significa PHP Data Object (Objeto de datos PHP). La diferencia principal entre
+                        PDO y MySQLi es que PDO es compatible con varios tipos de bases de datos diferentes (MySQL, MS SQL,
+                        Postgre DB) en el mismo script, sin embargo, solo tienes que escribir funciones relacionadas con
+                        los datos una vez. PDO está ‘orientado a objetos’, la conexión a la base de datos se crea al crear
+                        un objeto variable. Ejemplo de creación de un nuevo objeto:
+                    </p>
+
                     <br/>
-                     <img class="img-thumbnail" src="../images/Coneccion PHP-MySQL/Captura-2.png">
+                    <img class="img-thumbnail" src="../images/Coneccion PHP-MySQL/Captura-2.png">
                     <br/>
-                    
-                      <p class="text-justify mt-4">
-                        Aquí está el ejemplo básico de código PHP que se puede usar para establecer una conexión a una base de datos MySQL usando MySQLi:
-                      </p>
-                    
-                      <br/>
-                     <img class="img-thumbnail" src="../images/Coneccion PHP-MySQL/Captura.png">
+
+                    <p class="text-justify mt-4">
+                        Aquí está el ejemplo básico de código PHP que se puede usar para establecer una conexión a una base de datos MySQL usando
+                        MySQLi:
+                    </p>
+
+                    <br/>
+                    <img class="img-thumbnail" src="../images/Coneccion PHP-MySQL/Captura.png">
                     <br/>
                     <cite style="font-size: .8em">TUTORIAL H HOSTINGER.(2018).Como conectar PHP con MySQL.[Figura].Recuperado de:
                         <br/>https://www.hostinger.co/tutoriales/conectar-php-mysql/#gref</cite>
-                          
-                    
-                     <p class="text-justify mt-4">
-                       Nos conectaremos a una base de datos con nombre u309565199_name y esta base de datos nuestra tiene un usuario asociado u309565199_user. También debes tener una contraseña para la base de datos, en nuestro caso la contraseña será comprahosting.
-                      <br/>
-                         <br/>  
-                       Otra cosa que vale la pena mencionar es que debes tener un nombre de servidor (servername) o de host (hostname) correctos. En Hostinger, el nombre de host de MySQL se puede encontrar en la sección de Bases de Datos MySQL. En nuestro ejemplo, es mysql.hostinger.es.
-                     </p>
-                          
+
+
                     <p class="text-justify mt-4">
-                      Si la conexión con la BBDD esta correctamente creada y seguimos a cabalidad los pasos mencionados en esta sección podremos acceder a la información de cualquier tabla que tengamos creada en nuestra base de datos MySQL.
+                        Nos conectaremos a una base de datos con nombre u309565199_name y esta base de datos nuestra tiene un usuario asociado u309565199_user.
+                        También debes tener una contraseña para la base de datos, en nuestro caso la contraseña será comprahosting.
+                        <br/>
+                        <br/> Otra cosa que vale la pena mencionar es que debes tener un nombre de servidor (servername) o de
+                        host (hostname) correctos. En Hostinger, el nombre de host de MySQL se puede encontrar en la sección
+                        de Bases de Datos MySQL. En nuestro ejemplo, es mysql.hostinger.es.
                     </p>
-                       
-                    
+
+                    <p class="text-justify mt-4">
+                        Si la conexión con la BBDD esta correctamente creada y seguimos a cabalidad los pasos mencionados en esta sección podremos
+                        acceder a la información de cualquier tabla que tengamos creada en nuestra base de datos MySQL.
+                    </p>
+
+
                 </div>
             </div>
         </div>
