@@ -1,2 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
 
-css/mm.txt
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  user-scalable=no, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="../images/iconPestañas/actividades.ico">
+    <title>Actividad Seleccionar y Modificar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <style>
+        .comparables {
+            text-align: center;
+            border: none;
+            border-bottom: 1px solid slategray;
+            width: 130px;
+            background-color: #fff3cd;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container bg-light">
+
+        <!-- Inicio carrucel -->
+        <div id="carrucel1" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Botones indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#carrucel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carrucel1" data-slide-to="1"></li>
+                <li data-target="#carrucel1" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Contenedor de los sliders -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <a href="consultarRegistros.html">
+                        <img class="d-block w-100" src="../images/carrusel/1.jpg" alt="" height="250">
+
+                        <!-- Texto dentro de las imagenes-->
+                        <div class="carousel-caption d-none d-md-block bg-gradient-dark " style="background-color: rgba(0, 0, 0, .4);">
+                            <h1>Como realizar consultas a una base de datos MySQL con PHP.</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="ActividadSeleccionarModificar.html">
+                        <img class="d-block w-100" src="../images/carrusel/2.jpg" alt="" height="250">
+                        <!-- Texto dentro de las imagenes-->
+                        <div class="carousel-caption d-none d-md-block bg-gradient-dark" style="background-color: rgba(0, 0, 0, .4);">
+                            <h1>Algunos ejercicios para repasar lo aprendido.</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="autores.html">
+                        <img class="d-block w-100" src="../images/carrusel/3.jpg" alt="" height="250">
+                        <!-- Texto dentro de las imagenes-->
+                        <div class="carousel-caption d-none d-md-block bg-gradient-dark" style="background-color: rgba(0, 0, 0, .4);">
+                            <h1>Conoce a las personas que hicieron posible este OVI.</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Controles de direccion -->
+                <a class="carousel-control-prev" href="#carrucel1" data-slide="prev">
+                    <!--Sin 'data-slide' no funciona-->
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#carrucel1" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <!-- Fin carrucel -->
+
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-secondary sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="barraNavegacion">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-item nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                            Lecturas
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="crearConexion.html">Coneccion PHP a MYSQL</a>
+                            <a class="dropdown-item" href="consultarRegistros.html">Consultar Registros</a>
+                            <a class="dropdown-item" href="InsertarRegistros.html">Insertar Registros</a>
+                            <a class="dropdown-item" href="#">Lectura 4</a>
+                            <a class="dropdown-item" href="#">Lectura 5</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                            Multimedia
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Multimedia 1</a>
+                            <a class="dropdown-item" href="#">Multimedia 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                            Actividades
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Actidividad 1</a>
+                            <a class="dropdown-item active" href="ActividadSeleccionarModificar.html">Actidividad Seleccionar y Modificar</a>
+                            <a class="dropdown-item" href="#">Actidividad 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="autores.html">Autores</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Fin barra navegacion -->
+
+        <!-- Inicio cuerpo inicio -->
+        <!-- AQUI CADA QUIEN PONE EL CONTENIDO DE LA SECCION QUE LE TOCO -->
+        <div class="container mt-3">
+            <!-- SELECT -->
+            <div class="alert-warning p-2">
+
+                <h2 class="text-center">Actividad Selección</h2>
+                <br/>
+                <p>
+                    <strong> Del siguiente texto completar los espacios con las palabras correspondientes: </strong>
+                </p>
+                <p>
+                    Para crear una consulta requerimos conocer, la palabra reservada del lenguaje SQL
+                    <input type="text" class="comparables"> y un atributo de la tabla de donde queremos sacar la información que sería el
+                    <input type="text" class="comparables">, con esta información podemos proceder a crear la consulta, pero no sin antes conocer los dos métodos
+                    utilizados por PHP para realizar correctamente la consulta. El primero es el que realiza la conexión
+                    a la base de datos que seria
+                    <input type="text" class="comparables">, la cual guardamos en una variable y utilizamos luego el método que permite generar la consulta
+                    <input type="text" class="comparables"> el cual recibe como primer parámetro la variable con la conexión y segundo parámetro la sentencia SQL;
+                    ya con esta información podemos proceder a crear la consulta de la forma:
+
+
+
+
+                </p>
+                <div class="ml-5 pl-5">
+                    <p class="text-justify">
+                        $ varConexion =
+                        <input type="text" class="comparables">(“nombreHost”,”userName”,”password”,”nombreBBDD”);
+                        <br> If($resultado =
+                        <input type="text" class="comparables">($varConexion, “
+                        <input type="text" class="comparables"> * FROM nombreTablaBBDD”)){
+                        <div class="ml-5">// Código que se ejecutara si la selección devuelve algún resultado.</div>
+                        }
+                    </p>
+                </div>
+                <p>
+                    Por último, pero no menos importante, se debe liberar el espacio de memoria que se utiliza al hacer la consulta, esto se
+                    hace con el método de PHP
+                    <input type="text" class="comparables">.
+                    <br>
+                    <div class="text-center">
+                        <input type="text" class="comparables">($resultado);
+                    </div>
+
+                </p>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" onclick="revisarSeleccion()">Revisar</button>
+                    <button type="button" class="btn btn-primary" onclick="mostrarRespuestas()">Mostrar respuestas</button>
+                </div>
+                <h2 id="mensajeSelect" class="text-center mt-4 text-success"></h2>
+            </div>
+            <hr/>
+            <!-- UPDATE -->
+            <div class="alert-success p-2">
+                <h2 class="text-center">Actividad Modificar</h2>
+                <br/>
+                <p>
+                    <strong> Leer detenidamente los enunciados y responder las siguientes preguntas: </strong>
+                </p>
+                <ol>
+                    <li>¿Qué sentencia del lenguaje SQL se utiliza para modificar un registro?
+                        <ol type="a">
+                            <li>
+                                <input type="radio" name="primeraP" onclick="primeraP='a'"> SELECT
+                            </li>
+                            <li>
+                                <input type="radio" name="primeraP" onclick="primeraP='b'"> DELETE
+                            </li>
+                            <li>
+                                <input type="radio" name="primeraP" onclick="primeraP='c'"> UPDATE
+                            </li>
+                            <li>
+                                <input type="radio" name="primeraP" onclick="primeraP='d'"> LIKE
+                            </li>
+                        </ol>
+                        <strong>
+                            <p class="p-2 mensajeMod"></p>
+                        </strong>
+                    </li>
+                    <hr/>
+                    <li>¿Qué datos se requieren conocer para realizar correctamente la sentencia SQL que permita la modificación
+                        de un registro?
+                        <ol type="a">
+                            <li>
+                                <input type="radio" name="segundaP" onclick="segundaP='a'"> HostName y Password.
+                            </li>
+                            <li>
+                                <input type="radio" name="segundaP" onclick="segundaP='b'"> Nombre de la tabla y Id del registro.
+                            </li>
+                            <li>
+                                <input type="radio" name="segundaP" onclick=segundaaP='c"'> Todos los anteriores.
+                            </li>
+                            <li>
+                                <input type="radio" name="segundaP" onclick="segundaP='d'"> Ninguno de los anteriores.
+                            </li>
+                        </ol>
+                        <strong>
+                            <p class="p-2 mensajeMod"></p>
+                        </strong>
+                    </li>
+                    <hr/>
+                    <li>La palabra reservada
+                        <strong>WHERE</strong> del lenguaje SQL, se utiliza para:
+                        <ol type="a">
+                            <li>
+                                <input type="radio" name="terceraP" onclick="terceraP='a'"> Eliminar un registro de una tabla.
+                            </li>
+                            <li>
+                                <input type="radio" name="terceraP" onclick="terceraP='b'"> Ordenar los registros de mayor a menor.
+                            </li>
+                            <li>
+                                <input type="radio" name="terceraP" onclick="terceraP='c'"> Unir dos tablas sin que aparezcan datos repetidos.
+                            </li>
+                            <li>
+                                <input type="radio" name="terceraP" onclick="terceraP='d'"> Distinguir uno o varios registros de una tabla, para que solo estos sean afectados por alguna
+                                operación a realizar.
+                            </li>
+                        </ol>
+                        <strong>
+                            <p class="p-2 mensajeMod"></p>
+                        </strong>
+                    </li>
+                    <hr/>
+                    <li>¿Cuál de las siguientes sentencias SQL sirve para modificar un registro de una tabla?
+                        <ol type="a">
+                            <li>
+                                <input type="radio" name="cuartaP" onclick="cuartaP='a'"> "UPDATE nombreTabla SET nombreAtributo1='...',nombreAtributo2='...',... WHERE idRegistro
+                                ...".
+                            </li>
+                            <li>
+                                <input type="radio" name="cuartaP" onclick="cuartaP='b'"> "SELECT nombreAtributos FROM nombreTabla".
+                            </li>
+                            <li>
+                                <input type="radio" name="cuartaP" onclick="cuartaP='c'"> "UPDATE nombreTabla SET nombreAtributo1='...',nombreAtributoN='...'".
+                            </li>
+                            <li>
+                                <input type="radio" name="cuartaP" onclick="cuartaP='d'"> Ninguna de las anteriores.
+                            </li>
+
+                        </ol>
+                        <strong>
+                            <p class="p-2 mensajeMod"></p>
+                        </strong>
+                    </li>
+                    <hr/>
+                    <li>¿Con que palabra reservada del lenguaje de programación PHP podemos realizar la ejecución de una sentencia
+                        SQL?
+                        <ol type="a">
+                            <li>
+                                <input type="radio" name="quintaP" onclick="quintaP='a'"> $SQL.
+                            </li>
+                            <li>
+                                <input type="radio" name="quintaP" onclick="quintaP='b'"> mysqli_connect.
+                            </li>
+                            <li>
+                                <input type="radio" name="quintaP" onclick="quintaP='c'"> mysqli_free_result.
+                            </li>
+                            <li>
+                                <input type="radio" name="quintaP" onclick="quintaP='d'"> mysqli_query.
+                            </li>
+                        </ol>
+                        <strong>
+                            <p class="p-2 mensajeMod"></p>
+                        </strong>
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <button type="button" class="btn btn-success" onclick="revisarModificar()">Enviar Respuestas</button>
+                </div>
+                <h2 id="respuestaMod" class="text-success text-center mt-4"></h2>
+            </div>
+        </div>
+        <hr class="bg-dark">
+        <!-- Fin cuerpo inicio -->
+
+        <!-- Inicio footer -->
+        <footer class="pb-2">
+            <div class="row">
+                <div class="col-6">
+                    <a href="https://www.unad.edu.co/">
+                        <img class="img-fluid ml-5 pl-2" src="../images/logoUNADFooter.png">
+                    </a>
+                </div>
+
+                <div class="col-6 text-center">
+                    <div class="text-center mb-2" style="font-size: 1.2em;">
+                        <strong>Visita No.</strong>
+                        <br>
+                        <div id="sfcac7p6u4qah8ywyg68km6k9fcb76qmag8"></div>
+                        <script type="text/javascript" src="https://counter5.wheredoyoucomefrom.ovh/private/counter.js?c=ac7p6u4qah8ywyg68km6k9fcb76qmag8&down=async"
+                            async></script>
+                        <noscript>
+                            <a href="https://www.contadorvisitasgratis.com" title="contador web">
+                                <img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=ac7p6u4qah8ywyg68km6k9fcb76qmag8" border="0"
+                                    title="contador web" alt="contador web">
+                            </a>
+                        </noscript>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <i class="fab fa-youtube-square fa-2x text-danger"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-square fa-2x text-primary"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google-plus-square fa-2x text-danger"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+        <!-- Fin footer -->
+        <hr class="bg-light">
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/actividadSeleccionarModificar.js"></script>
+</body>
+
+</html>
