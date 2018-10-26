@@ -21,6 +21,9 @@ function revisarSeleccion(){
         }
     }
 }
+
+
+
 function mostrarRespuestas(){
     var respuestasUser = document.getElementsByClassName('comparables');
     var mensajeSelect = document.getElementById('mensajeSelect');
@@ -36,7 +39,9 @@ var primeraP = "",
     segundaP = "",
     terceraP = "",
     cuartaP = "",
-    quintaP = "";
+    quintaP= ""
+   
+
 function revisarModificar(){    
     var respuestasUser = [primeraP,segundaP,terceraP,cuartaP,quintaP];
     var respuestasM = ['c','b','d','a','d'];    
