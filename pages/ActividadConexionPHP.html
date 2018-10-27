@@ -97,8 +97,8 @@
                             <a class="dropdown-item" href="crearConexion.html">Coneccion PHP a MYSQL</a>
                             <a class="dropdown-item" href="consultarRegistros.html">Consultar Registros</a>
                             <a class="dropdown-item" href="InsertarRegistros.html">Insertar Registros</a>
-                            <a class="dropdown-item" href="#">Lectura 4</a>
-                            <a class="dropdown-item" href="#">Lectura 5</a>
+                            <a class="dropdown-item" href="modificarRegistros.html">Modificar Registros</a>
+                            <a class="dropdown-item" href="eliminarRegistros.html">Eliminar Registros</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -115,8 +115,8 @@
                             Actividades
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="ActividadConexionPHP.html">Actidividad de Conexion</a>
-                            <a class="dropdown-item active" href="ActividadSeleccionarModificar.html">Actidividad Seleccionar y Modificar</a>
+                            <a class="dropdown-item active" href="ActividadConexionPHP.html">Actidividad de Conexion</a>
+                            <a class="dropdown-item" href="ActividadSeleccionarModificar.html">Actidividad Seleccionar y Modificar</a>
                             <a class="dropdown-item" href="#">Actidividad 3</a>
                         </div>
                     </li>
@@ -132,94 +132,98 @@
         <!-- AQUI CADA QUIEN PONE EL CONTENIDO DE LA SECCION QUE LE TOCO -->
         <div class="container mt-3">
             <!-- CONEXION -->
-            
-        <hr/>
-         <div class="alert-success p-2">
+
+            <hr/>
+            <div class="alert-success p-2">
                 <h2 class="text-center">Actividad de Conexion</h2>
                 <br/>
-               
+
                 <hr/>
-                    <li>¿Cuantos parámetros recibe el objeto de clase <strong>mysqli</strong> para la conexión.?
-                        <ol type="a">
-                            <li>
-                                <input type="radio" name="primeraP" onclick="primeraP='a'"> 3.
-                            </li>
-                            <li>
-                                <input type="radio" name="primeraP" onclick="primeraP='b'"> 4.
-                            </li>
-                            <li>
-                                <input type="radio" name="primeraP" onclick="primeraP='c'"> 5.
-                            </li>
-                            
-                        </ol>
-                        <strong>
-                            <p class="p-2 mensajeMod"></p>
-                        </strong>
-                    </li>
-             
-               <hr/>
-                    <li>¿seleccione los parámetros que recibe el objeto de clase <strong>mysqli</strong> para la conexión.?
-                        <ol type="a">
-                            <li>
-                                <input type="radio" name="segundaP" onclick="segundaP='a'">nombre del servidor, usuario, clave DB, nombre de la DB.
-                            </li>
-                            <li>
-                                <input type="radio" name="segundaP" onclick="segundaP='b'"> nombre del servidor, local host, clave DB, nombre de la DB.
-                            </li>
-                            <li>
-                                <input type="radio" name="segundaP" onclick="segundaP='c'"> nombre del servidor, clave DB, nombre de la DB.
-                            </li>
-                        </ol>
-                        <strong>
-                            <p class="p-2 mensajeMod"></p>
-                        </strong>
-                    </li>
-               
-                   <hr/>
-                    <li>La siguiente expresión <strong>$mysql=new mysqli("localhost","root","","base1")</strong> de la conexión a una DB le hace falta un carácter y bota un error de Syntaxis, ¿cual es ?.
-                        <ol type="a">
-                            <li>
-                                <input type="radio" name="terceraP" onclick="terceraP='a'"> ; 
-                            </li>
-                            <li>
-                                <input type="radio" name="terceraP" onclick="terceraP='b'">()
-                            </li>
-                            <li>
-                                <input type="radio" name="terceraP" onclick="terceraP='c'"> “”
-                            </li>
-                        </ol>
-                        <strong>
-                            <p class="p-2 mensajeMod"></p>
-                        </strong>
-                    </li>
-             
-                   <hr/>
-             
-                   <li>¿con que sentencia podemos eliminar un registro?
-                        <ol type="a">
-                            <li>
-                                <input type="radio" name="cuartaP" onclick="cuartaP='a'">TRUNCATE.
-                            </li>
-                            <li>
-                                <input type="radio" name="cuartaP" onclick="cuartaP='b'"> DROP.
-                            </li>
-                            <li>
-                                <input type="radio" name="cuartaP" onclick="cuartaP='c'"> DELETE.
-                            </li>
-                        </ol>
-                        <strong>
-                            <p class="p-2 mensajeMod"></p>
-                        </strong>
-                    </li>
-             <hr/>
-             
-             
-                  <div class="text-center">
+                <li>¿Cuantos parámetros recibe el objeto de clase
+                    <strong>mysqli</strong> para la conexión.?
+                    <ol type="a">
+                        <li>
+                            <input type="radio" name="primeraP" onclick="primeraP='a'"> 3.
+                        </li>
+                        <li>
+                            <input type="radio" name="primeraP" onclick="primeraP='b'"> 4.
+                        </li>
+                        <li>
+                            <input type="radio" name="primeraP" onclick="primeraP='c'"> 5.
+                        </li>
+
+                    </ol>
+                    <strong>
+                        <p class="p-2 mensajeMod"></p>
+                    </strong>
+                </li>
+
+                <hr/>
+                <li>¿seleccione los parámetros que recibe el objeto de clase
+                    <strong>mysqli</strong> para la conexión.?
+                    <ol type="a">
+                        <li>
+                            <input type="radio" name="segundaP" onclick="segundaP='a'">nombre del servidor, usuario, clave DB, nombre de la DB.
+                        </li>
+                        <li>
+                            <input type="radio" name="segundaP" onclick="segundaP='b'"> nombre del servidor, local host, clave DB, nombre de la DB.
+                        </li>
+                        <li>
+                            <input type="radio" name="segundaP" onclick="segundaP='c'"> nombre del servidor, clave DB, nombre de la DB.
+                        </li>
+                    </ol>
+                    <strong>
+                        <p class="p-2 mensajeMod"></p>
+                    </strong>
+                </li>
+
+                <hr/>
+                <li>La siguiente expresión
+                    <strong>$mysql=new mysqli("localhost","root","","base1")</strong> de la conexión a una DB le hace falta un carácter
+                    y bota un error de Syntaxis, ¿cual es ?.
+                    <ol type="a">
+                        <li>
+                            <input type="radio" name="terceraP" onclick="terceraP='a'"> ;
+                        </li>
+                        <li>
+                            <input type="radio" name="terceraP" onclick="terceraP='b'">()
+                        </li>
+                        <li>
+                            <input type="radio" name="terceraP" onclick="terceraP='c'"> “”
+                        </li>
+                    </ol>
+                    <strong>
+                        <p class="p-2 mensajeMod"></p>
+                    </strong>
+                </li>
+
+                <hr/>
+
+                <li>¿con que sentencia podemos eliminar un registro?
+                    <ol type="a">
+                        <li>
+                            <input type="radio" name="cuartaP" onclick="cuartaP='a'">TRUNCATE.
+                        </li>
+                        <li>
+                            <input type="radio" name="cuartaP" onclick="cuartaP='b'"> DROP.
+                        </li>
+                        <li>
+                            <input type="radio" name="cuartaP" onclick="cuartaP='c'"> DELETE.
+                        </li>
+                    </ol>
+                    <strong>
+                        <p class="p-2 mensajeMod"></p>
+                    </strong>
+                </li>
+                <hr/>
+
+
+                <div class="text-center">
                     <button type="button" class="btn btn-success" onclick="revisarModificar()">Enviar Respuestas</button>
                 </div>
                 <h2 id="respuestaMod" class="text-success text-center mt-4"></h2>
-        
-           
+
+
             </div>
         </div>
         <hr class="bg-dark">
