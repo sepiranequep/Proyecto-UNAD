@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,  user-scalable=no, initial-scale=1.0,  maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="images/iconPestañas/index.ico">
-    <title>Inicio</title>
+    <link rel="shortcut icon" href="../images/iconPestañas/lecturas.ico">
+    <title>Modificar  Registros</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 
 <body class="bg-dark">
@@ -30,32 +27,32 @@
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <a href="pages/consultarRegistros.html">
-                        <img class="d-block w-100" src="images/carrusel/1.jpg" alt="" height="250">
+                    <a href="consultarRegistros.html">
+                        <img class="d-block w-100" src="../images/carrusel/1.jpg" alt="" height="250">
 
                         <!-- Texto dentro de las imagenes-->
                         <div class="carousel-caption d-none d-md-block bg-gradient-dark " style="background-color: rgba(0, 0, 0, .4);">
-                            <h1>Como realizar consultas a una base de datos MySQL con PHP.</h1>                         
+                            <h1>Como realizar consultas a una base de datos MySQL con PHP.</h1>
                         </div>
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="pages/ActividadSeleccionarModificar.html">
-                        <img class="d-block w-100" src="images/carrusel/2.jpg" alt="" height="250">
+                    <a href="ActividadSeleccionarModificar.html">
+                        <img class="d-block w-100" src="../images/carrusel/2.jpg" alt="" height="250">
                         <!-- Texto dentro de las imagenes-->
                         <div class="carousel-caption d-none d-md-block bg-gradient-dark" style="background-color: rgba(0, 0, 0, .4);">
-                            <h1>Algunos ejercicios para repasar lo aprendido.</h1>                        
+                            <h1>Algunos ejercicios para repasar lo aprendido.</h1>
                         </div>
                     </a>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="pages/autores.html">
-                        <img class="d-block w-100" src="images/carrusel/3.jpg" alt="" height="250">
+                    <a href="autores.html">
+                        <img class="d-block w-100" src="../images/carrusel/3.jpg" alt="" height="250">
                         <!-- Texto dentro de las imagenes-->
                         <div class="carousel-caption d-none d-md-block bg-gradient-dark" style="background-color: rgba(0, 0, 0, .4);">
-                            <h1>Conoce a las personas que hicieron posible este OVI.</h1>                        
+                            <h1>Conoce a las personas que hicieron posible este OVI.</h1>
                         </div>
                     </a>
                 </div>
@@ -71,7 +68,6 @@
             </div>
         </div>
         <!-- Fin carrucel -->
-        
 
         <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-secondary sticky-top">
@@ -81,18 +77,18 @@
 
             <div class="collapse navbar-collapse" id="barraNavegacion">
                 <ul class="navbar-nav mx-auto text-center">
-                    <li class="nav-item active">
-                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-item nav-link">Inicio</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item active dropdown">
                         <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
                             Lecturas
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="pages/crearConexion.html">Coneccion PHP a MYSQL</a>
-                            <a class="dropdown-item" href="pages/consultarRegistros.html">Consultar Registros</a>
-                            <a class="dropdown-item" href="pages/InsertarRegistros.html">Insertar Registros</a>
-                            <a class="dropdown-item" href="pages/modificarRegistros.html">Modificar Registros</a>
+                            <a class="dropdown-item" href="crearConexion.html">Coneccion PHP a MYSQL</a>
+                            <a class="dropdown-item" href="consultarRegistros.html">Consultar Registros</a>
+                            <a class="dropdown-item active" href="InsertarRegistros.html">Insertar Registros</a>
+                            <a class="dropdown-item" href="modificarRegistros.html">Modificar Registros</a>
                             <a class="dropdown-item" href="#">Lectura 5</a>
                         </div>
                     </li>
@@ -110,13 +106,13 @@
                             Actividades
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="pages/ActividadConexionPHP.html">Actidividad de Conexion</a>
-                            <a class="dropdown-item" href="pages/ActividadSeleccionarModificar.html">Actidividad Seleccionar y Modificar</a>
+                            <a class="dropdown-item" href="ActividadConexionPHP.html">Actidividad de Conexion</a>
+                            <a class="dropdown-item" href="ActividadSeleccionarModificar.html">Actidividad Seleccionar y Modificar</a>
                             <a class="dropdown-item" href="#">Actidividad 3</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/autores.html">Autores</a>
+                        <a class="nav-link" href="autores.html">Autores</a>
                     </li>
                 </ul>
             </div>
@@ -127,52 +123,38 @@
         <!-- AQUI CADA QUIEN PONE EL CONTENIDO DE LA SECCION QUE LE TOCO -->
         <div class="container mt-3">
             <div class="shadow-sm">
-                <h1 class="text-center">Objetivos generales del OVI</h1>
-                <br>
-                <h3>Objetivo General</h3>
-                <p>
-                    Realizar un objeto virtual de aprendizaje, utilizando tecnologías de maquetado y diseño web como lo son HTML5 y CSS3, esto
-                    con la finalidad de adquirir experiencia con las herramientas antes mencionadas para en un futuro poder
-                    diseñar páginas más complejas.
-                </p>
+                <div class="bg-secondary text-white p-2 rounded">
+                    <h2>Objetivo de la sección</h2>
+                    <p>
+                        Ver con un ejemplo los pasos a seguir para realizar una modificación de un registro a una tabla dentro de una base de datos MySQL.
+                    </p>
+                </div>
+                <div class="p-2 mt-4 text-center">
+                    <h2 class="text-center">Procedimiento para realizar la Modificación de un registro
+                        <br/> a una base de datos Mysql con PHP</h2>
+                    <br/>
+                    <p class="text-justify">
+                       A continuación, se establece paso a paso el proceso para la modificación de registros de una base de datos de MySQL desde una pagina en PHP, creando una opción en las tablas establecidas dentro de la pagina que permiten realizar dicho proceso.
+                        <br/>
+                    </p>
+                    <img class="img-thumbnail" src="../images/Modificar registros/modificar.png">
+                    <br/>
+                    <cite style="font-size: .8em">Modificar registros de nuestra base de datos. Tutorial de PHP y MySQL.[Figura].Recuperado
+                        de:
+                        <br/>http://www.pablin.com.ar/computer/cursos/phpmysql/modificacion.htm</cite>
+                    <p class="text-justify mt-4"><br/>
+                        Como podemos observar claramente en el código que presenta la imagen, se debe hacer uso de la sentencia 
+                        <strong>update</strong> (actualizar), la cual debemos utilizar junto al nombre de la tabla seguido de
+                        <strong>set</strong> junto con el campo y su nuevo valor.<br/><br/>
+                        En este caso como se muestra en el ejemplo se busca modificar los valores de los campos <strong>nombre, dirrección, telefono e email,</strong> los cuales se encuentran incluidos en la tabla llamada <strong>agenda</strong>.
+                        
+                        <br/>
+                        <br/>
 
-                <h3>Objetivos Especificos</h3>
-                <ul>
-                    <li>
-                        <p>
-                            Dar a conocer los pasos y métodos necesarios para realizar la conexión a una base de datos MySQL desde PHP haciendo un ping
-                            al mismo para comprobar que la conexión fue exitosa.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Mostrar las instrucciones necesarias para la manipulación de la base de datos, ejecutando operaciones de consulta, adición,
-                            modificación y eliminación de registros.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Utilizar medios como videos e imágenes para la ilustración y orientación mas completa de los procedimientos que se deben
-                            realizar para conectar y acceder a datos desde una base de datos con PHP.
-                        </p>
-                    </li>
-                </ul>
-                <p>
-                    Además de todo lo anterior encontraremos actividades que nos ayudaran a afianzar los conocimientos recopilados durante la
-                    lectura del OVI, es muy recomendable que luego de estudiar la teoría se pase directamente a la sección
-                    de actividades.
-                </p>
-                <p>
-                    Antes de salir del OVI recomendamos pasar por la seccion de
-                    <strong>Autores</strong> donde encontraras la información de contacto de cada colaborador.
-                </p>
-                <h1>Modulo de twitter</h1>
-                <div style="height: 60vh; overflow: auto;">
-                    <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                    </p>
                 </div>
             </div>
-
         </div>
         <hr class="bg-dark">
         <!-- Fin cuerpo inicio -->
@@ -182,7 +164,7 @@
             <div class="row">
                 <div class="col-6">
                     <a href="https://www.unad.edu.co/">
-                        <img class="img-fluid ml-5 pl-2" src="images/logoUNADFooter.png">
+                        <img class="img-fluid ml-5 pl-2" src="../images/logoUNADFooter.png">
                     </a>
                 </div>
 
@@ -226,8 +208,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-    <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
